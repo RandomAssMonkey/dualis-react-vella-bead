@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {ItemProps} from "./ItemProps";
+import './Item.css';
 
-const Item: React.FC<ItemProps> = ({ id, name, category, imageUrl, onDelete }) => {
+const Item: React.FC<ItemProps> = ({ id, name, category, imageUrl, onDelete, onImageClick }) => {
     const [isDeleting, setIsDeleting] = useState(false);
 
     const handleDelete = () => {
@@ -16,9 +17,13 @@ const Item: React.FC<ItemProps> = ({ id, name, category, imageUrl, onDelete }) =
         setIsDeleting(false);
     };
 
+    const handleImageClick = () => {
+        onImageClick(imageUrl);
+    };
+
     return (
         <div className="item">
-            <img src={imageUrl} alt={name} />
+            <img src={imageUrl} alt={name} onClick={handleImageClick} />
             <div className="details">
                 <span className="name">{name}</span>
                 <span className="category">{category}</span>
