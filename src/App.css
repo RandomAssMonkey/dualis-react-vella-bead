@@ -55,6 +55,15 @@
   cursor: pointer;
 }
 
+.item .accept-delete-button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .item .delete-button:hover {
   background-color: #c82333;
 }
@@ -113,4 +122,9 @@
 
 .toggle-create-button:hover {
   background-color: #0056b3;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
 }

@@ -1,13 +1,21 @@
-import React, { ChangeEvent } from 'react';
+// SearchBar.tsx
+import React from 'react';
 import {SearchBarProps} from "./SearchBarProps";
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        onSearch(e.target.value);
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch, selectedCategory }) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const text = e.target.value;
+        onSearch(text);
     };
 
     return (
-        <input className="search-bar" type="text" placeholder="Search" onChange={handleChange} />
+        <div className="search-bar">
+            <input
+                type="text"
+                placeholder="Search by name"
+                onChange={handleInputChange}
+            />
+        </div>
     );
 };
 

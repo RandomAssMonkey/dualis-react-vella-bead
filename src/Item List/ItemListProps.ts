@@ -1,4 +1,6 @@
-export interface ItemListProps {
-    items: { id: string; name: string; category: string }[];
+import {ItemInterface} from "../Item/ItemInterface";
+
+export interface ItemListProps{
+    items: ItemInterface[];
     onDelete: (id: string) => void;
 }

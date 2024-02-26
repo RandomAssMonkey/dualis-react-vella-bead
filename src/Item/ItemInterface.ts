@@ -1,7 +1,6 @@
-export interface ItemProps {
+export interface ItemInterface {
     id: string;
     name: string;
     category: string;
     imageUrl: string;
-    onDelete: (id: string) => void;
 }
