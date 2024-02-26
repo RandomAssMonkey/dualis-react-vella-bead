@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {CreateItemProps} from "./CreateItemProps";
+import './CreateItem.css';
 
 const CreateItem: React.FC<CreateItemProps> = ({ onCreate }) => {
     const [name, setName] = useState('');

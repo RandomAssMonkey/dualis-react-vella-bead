@@ -1,0 +1,92 @@
+.clock {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Add white border */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Existing styles remain the same */
+.clock-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff 60%, #aaa 80%, #666 100%);
+    border: 2px solid #333;
+}
+
+/* Remaining styles... */
+
+.hour-mark,
+.minute-mark,
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background-color: #000;
+    transform-origin: 50% 100%;
+}
+
+.hour-mark,
+.minute-mark {
+    width: 2px;
+    height: 8px;
+    top: 15px;
+    left: calc(50% - 1px);
+    background-color: #666;
+}
+
+.hour-mark {
+    height: 12px;
+    background-color: #333;
+}
+
+.minute-mark {
+    height: 6px;
+    background-color: #999;
+}
+
+.hour-hand {
+    width: 6px;
+    height: 40px;
+    top: 30px; /* Adjusted position */
+    left: calc(50% - 3px);
+    background-color: #333;
+}
+
+
+.minute-hand {
+    width: 4px;
+    height: 60px;
+    top: 10px;
+    left: calc(50% - 2px);
+    background-color: #666;
+}
+
+.second-hand {
+    width: 2px;
+    height: 70px;
+    top: 0;
+    left: calc(50% - 1px);
+    background-color: #f00;
+    z-index: 1; /* Ensure second hand is on top of other hands */
+    border-radius: 2px;
+}
+
+.center-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
+    background-color: #333;
+    border-radius: 50%;
+    z-index: 2; /* Ensure center dot is on top of other elements */
+}

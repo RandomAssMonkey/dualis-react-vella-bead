@@ -1,7 +1,6 @@
-export interface ItemProps {
-    id: string;
-    name: string;
-    category: string;
-    imageUrl: string;
+import {ItemInterface} from "./ItemInterface";
+
+export interface ItemProps extends ItemInterface{
     onDelete: (id: string) => void;
+    onImageClick: (imageUrl: string) => void;
 }
