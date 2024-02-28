@@ -17,9 +17,9 @@ const Clock: React.FC = () => {
     const minute = time.getMinutes();
     const second = time.getSeconds();
 
-    const hourRotation = ((hour * 30) + (minute / 2)); // 30 degrees per hour, 0.5 degrees per minute
-    const minuteRotation = ((minute * 6) + (second / 10)); // 6 degrees per minute, 0.1 degrees per second
-    const secondRotation = second * 6; // 6 degrees per second
+    const hourRotation = ((hour * 30) + (minute / 2));
+    const minuteRotation = ((minute * 6) + (second / 10));
+    const secondRotation = second * 6;
 
     const handleMouseOver = () => {
         const formattedTime = time.toLocaleTimeString();

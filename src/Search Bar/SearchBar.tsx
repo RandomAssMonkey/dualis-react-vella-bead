@@ -1,4 +1,3 @@
-// SearchBar.tsx
 import React from 'react';
 import {SearchBarProps} from "./SearchBarProps";
 

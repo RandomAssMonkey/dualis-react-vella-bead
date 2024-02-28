@@ -1,36 +1,14 @@
 body {
-  background-color: #f2f2f2; /* Dark background color */
-  background-image: radial-gradient(circle, #333333, #1a1a1a); /* Radial gradient */
-  color: #ffffff; /* Text color */
-  font-family: Arial, sans-serif; /* Font family */
+  background-color: #f2f2f2;
+  background-image: radial-gradient(circle, #333333, #1a1a1a);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.category-buttons {
-  margin-bottom: 20px;
-}
-
-.category-buttons button {
-  margin-right: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.category-buttons button:hover {
-  background-color: #0056b3;
-}
-
-.category-buttons button.active {
-  background-color: #0056b3;
 }
 
 .item {
@@ -134,9 +112,9 @@ body {
 .item img {
   width: 150px;
   height: 150px;
-  border: 2px solid #ccc; /* Add a border around the image */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  padding: 5px; /* Add some padding inside the border */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .reset-button {
@@ -163,15 +141,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   border-radius: 10px;
-  z-index: 1000; /* Ensure the image viewer is on top */
+  z-index: 1000;
 }
 
 .image-viewer img {
-  max-width: 90%; /* Limit the width of the image */
-  max-height: 90vh; /* Limit the height of the image */
+  max-width: 90%;
+  max-height: 90vh;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
@@ -181,16 +159,16 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
-  color: #fff; /* White text color */
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
   border: none;
   padding: 5px 10px;
-  border-radius: 50%; /* Circular button */
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .close-button:hover {
-  background-color: rgba(255, 255, 255, 0.5); /* Lighten the background on hover */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 

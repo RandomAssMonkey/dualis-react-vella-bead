@@ -1,7 +1,11 @@
 .item {
     position: relative;
-    display: inline-block;
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .details {
@@ -23,4 +27,46 @@
     color: #666;
     font-size: 14px;
     font-style: italic;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item .name {
+    font-weight: bold;
+}
+
+.item .category {
+    color: #666;
+}
+
+.item .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item .accept-delete-button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item .delete-button:hover {
+    background-color: #c82333;
 }

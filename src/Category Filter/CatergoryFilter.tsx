@@ -1,8 +1,8 @@
 import React from 'react';
 import { CategoryFilterProps } from "./CategoryFilterProps";
+import './Category.css'
 
 const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, onSelectCategory }) => {
-    // Filter out empty strings or null values from the categories array
     const filteredCategories = categories.filter(category => category.trim() !== "");
 
     return (

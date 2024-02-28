@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CategoryFilter from './Category Filter/CatergoryFilter';
 import CreateItem from './Create Item/CreateItem';
-import Item from './Item/Item'; // Import Item component
+import Item from './Item/Item';
 import SearchBar from './Search Bar/SearchBar';
 import './App.css';
 import { ItemInterface } from './Item/ItemInterface';
@@ -22,7 +22,7 @@ const initialItems: ItemInterface[] = [
 const App: React.FC = () => {
   const [items, setItems] = useState<ItemInterface[]>(initialItems);
   const [filteredItems, setFilteredItems] = useState<ItemInterface[]>(initialItems);
-  const [selectedCategory, setSelectedCategory] = useState<string>(''); // Initialize selectedCategory state
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   const categories = Array.from(new Set(items.map(item => item.category)));
   const [showImage, setShowImage] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<string>('');
